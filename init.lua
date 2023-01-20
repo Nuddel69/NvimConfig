@@ -5,7 +5,7 @@ require("matsb.core.keymaps")
 require("matsb.core.colorscheme")
 
 -- Plugins
-require("matsb.plugins.comment")
+-- require("matsb.plugins.comment")
 require("matsb.plugins.nvim-tree")
 require("matsb.plugins.lualine")
 require("matsb.plugins.telescope")

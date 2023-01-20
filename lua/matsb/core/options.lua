@@ -35,3 +35,4 @@ opt.signcolumn = "yes"
 -- Misc
 opt.iskeyword:append("-") -- Makes two words connected by "-" act as one
 opt.backspace = "indent,eol,start"
+opt.timeoutlen = 300

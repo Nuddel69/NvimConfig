@@ -34,11 +34,17 @@ return require("packer").startup(function(use)
 	use("bluz71/vim-nightfly-guicolors") -- Colourscheme to make it look noice
 	use("christoomey/vim-tmux-navigator") -- Navigate splits
 	use("szw/vim-maximizer") -- Maximise splits
-	use("tpope/vim-surround") -- Encase snippets in various brackets
-	use("vim-scripts/ReplaceWithRegister") -- Replace words with eachother
+	-- use("tpope/vim-surround") -- Encase snippets in various brackets
+	-- use("vim-scripts/ReplaceWithRegister") -- Replace words with eachother
 	use("nvim-lualine/lualine.nvim") -- Statusline
-	use("numToStr/Comment.nvim") -- Easy commenting
+	-- use("numToStr/Comment.nvim") -- Easy commenting
 	use("lewis6991/gitsigns.nvim") -- Basic git integration
+	use({
+		"folke/which-key.nvim",
+		config = function()
+			require("plugins.which-key").setup()
+		end,
+	}) -- Pop-up description of all keymaps
 
 	-- File explorer
 	use({ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" } })
