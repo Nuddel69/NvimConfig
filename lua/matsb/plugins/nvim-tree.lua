@@ -27,6 +27,7 @@ nvimtree.setup({
 	tab = {
 		sync = {
 			open = true,
+			close = true,
 		},
 	},
 })
