@@ -60,6 +60,7 @@ local mappings = {
 	["e"] = { "<cmd>NvimTreeToggle<CR>", "Toggle file explorer" },
 	["o"] = { "<cmd>NvimTreeFocus<CR>", "Focus file explorer" },
 	["c"] = { "<cmd>tabclose<CR>", "Close current buffer" }, -- I don't need every file at once
+	["/"] = { "gcc<CR>", "Comment current line" },
 
 	f = {
 		name = "Search",
@@ -106,6 +107,16 @@ local mappings = {
 	g = {
 		name = "Git",
 		s = { "<cmd>Neogit<CR>", "Status" },
+	},
+
+	a = {
+		name = "Arduino",
+		a = { "<cmd>ArduinoAttach<CR>", "Attach board" },
+		c = { "<cmd>ArduinoVerify<CR>", "Compile sketch" },
+		u = { "<cmd>ArduinoUpload<CR>", "Compile and upload sketch" },
+		s = { "<cmd>ArduinoUploadAndSerial<CR>", "Upload sketch and open serial monitor" },
+		b = { "<cmd>ArduinoChooseBoard<CR>", "Choose bord" },
+		p = { "<cmd>ArduinoChooseProgrammer<CR>", "Choose programmer" },
 	},
 }
 
