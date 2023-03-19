@@ -24,14 +24,15 @@ lspconfig["cssls"].setup({
 	on_attach = on_attach,
 })
 
-lspconfig["clangd"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+-- lspconfig["clangd"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- })
 
 lspconfig["arduino_language_server"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	-- on_new_config = require("arduino").on_new_config,
 })
 
 lspconfig["cmake"].setup({
@@ -54,7 +55,14 @@ lspconfig["pyright"].setup({
 	on_attach = on_attach,
 })
 
-lspconfig["sumneko_lua"].setup({
+lspconfig["ccls"].setup({
+	capabilities = capabilities,
+	cmd = { "ccls" },
+	filetypes = { "cpp", "c" },
+	root_dir = require("lspconfig/util").root_pattern("compile_commands.json", ".ccls", ".git"),
+})
+
+lspconfig["lua_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	settings = { -- custom settings for lua

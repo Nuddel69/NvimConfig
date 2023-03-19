@@ -40,6 +40,7 @@ return require("packer").startup(function(use)
 	use("numToStr/Comment.nvim") -- Easy commenting
 	use("lewis6991/gitsigns.nvim") -- Basic git integration
 	use("stevearc/vim-arduino") -- Arduino-cli integration
+	-- use("edKotinsky/Arduino.nvim")
 	-- use("lervag/vimtex") -- LaTeX integration
 
 	-- WhichKey
