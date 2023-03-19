@@ -32,6 +32,7 @@ return require("packer").startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- Extended lua functionality
 	use("bluz71/vim-nightfly-guicolors") -- Colourscheme to make it look noice
+	use("mhartington/oceanic-next")
 	use("christoomey/vim-tmux-navigator") -- Navigate splits
 	use("szw/vim-maximizer") -- Maximise splits
 	-- use("tpope/vim-surround") -- Encase snippets in various brackets

@@ -24,10 +24,10 @@ lspconfig["cssls"].setup({
 	on_attach = on_attach,
 })
 
--- lspconfig["clangd"].setup({
--- 	capabilities = capabilities,
--- 	on_attach = on_attach,
--- })
+lspconfig["clangd"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 
 lspconfig["arduino_language_server"].setup({
 	capabilities = capabilities,
@@ -55,12 +55,12 @@ lspconfig["pyright"].setup({
 	on_attach = on_attach,
 })
 
-lspconfig["ccls"].setup({
-	capabilities = capabilities,
-	cmd = { "ccls" },
-	filetypes = { "cpp", "c" },
-	root_dir = require("lspconfig/util").root_pattern("compile_commands.json", ".ccls", ".git"),
-})
+-- lspconfig["ccls"].setup({
+-- 	capabilities = capabilities,
+-- 	cmd = { "ccls" },
+-- 	filetypes = { "cpp", "c" },
+-- 	root_dir = require("lspconfig/util").root_pattern("compile_commands.json", ".ccls", ".git"),
+-- })
 
 lspconfig["lua_ls"].setup({
 	capabilities = capabilities,

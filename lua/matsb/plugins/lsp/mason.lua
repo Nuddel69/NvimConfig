@@ -21,7 +21,6 @@ mason_lspconfig.setup({
 		"cssls",
 		"clangd",
 		"arduino_language_server",
-		-- "ccls",
 		"cmake",
 		"jdtls",
 		"texlab",
@@ -34,7 +33,6 @@ mason_null_ls.setup({
 	ensure_installed = {
 		"prettier",
 		"stylua",
-		"ccls",
 		"eslint_d",
 		"pylint",
 		"clang_format",
